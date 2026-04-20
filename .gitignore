@@ -1,46 +1,48 @@
-# Compiled class file
+# --- Java & Spring Boot ---
 *.class
 target/
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+build/
+out/
+bin/
 *.jar
 *.war
-*.nar
 *.ear
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
-.DS_Store
-Thumbs.db
-
-# Build tool folders
-.gradle/
-build/
-.mvn/
-bin/
-
-# Environment / Sensitive files
+# --- Configuration & Secrets ---
+# We ignore .env and local properties, but NOT the main application.properties
 .env
-.properties
-# Note: Keep application.properties if it's a template, 
-# but ignore it if it contains real DB passwords.
+application-local.properties
+application-dev.properties
 
-# IDE Specific (IntelliJ IDEA)
+# --- Maven ---
+# We keep .mvn/wrapper so ./mvnw works for everyone
+# But we ignore the help/temp files Maven generates
+.mvn/help.log
+.mvn/timing.properties
+
+# --- IntelliJ IDEA ---
 .idea/
 *.iws
 *.iml
 *.ipr
+# Ignore specific workspace settings
 out/
+cmake-build-*/
+
+# --- VS Code ---
+# Useful since you use VS Code for React/Frontend
+.vscode/
+
+# --- Logs & Temp ---
+*.log
+logs/
+temp/
+hs_err_pid*
+replay_pid*
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
