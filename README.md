@@ -14,8 +14,4 @@ src/main/resources/
 🔗 Web Routes & LogicMethodEndpointDescriptionPatternGET/Renders Home Page with task listView RenderingPOST/addAdds a new Todo to the databasePost-Redirect-GetGET/update/{id}Toggles 'Completed' statusState ManagementGET/delete/{id}Removes the specific taskData Persistence⚙️ How It WorksPersistence: Data is managed via Spring Data JPA. Even though it's an H2 database by default, the entity is mapped to tbl_todos.State Management: The app uses a boolean flag (completed) to dynamically change UI classes via Thymeleaf's th:classappend.UI Feedback: Completed tasks are visually distinguished with a strikethrough and reduced opacity.▶️ Run Locally1. Clone the repositoryBashgit clone https://github.com/your-username/todo-app.git
 cd todo-app
 2. Run the applicationUsing the Maven Wrapper:Bash./mvnw spring-boot:run
-3. Access in BrowserOpen http://localhost:8080📌 Technical NotesFollows the MVC (Model-View-Controller) design pattern.Uses Lombok's @Builder for clean object instantiation.Implements the Post-Redirect-Get (PRG) pattern to prevent duplicate form submissions on page refresh.📜 LicenseDistributed under the MIT License. See LICENSE for more information.
-
-📜 License
-
-This project is open-source and available under the MIT License.
+3. Access in BrowserOpen http://localhost:8080🧠 Future Improvements[ ] Edit Mode: Allow users to update the text of existing tasks.[ ] Search & Filter: Filter by "Active", "Completed", or "All".[ ] User Auth: Add Spring Security for private, user-specific lists.[ ] Due Dates: Integration with a calendar or reminder system.📌 Technical NotesFollows the MVC (Model-View-Controller) design pattern.Uses Lombok's @Builder for clean object instantiation.Implements the Post-Redirect-Get (PRG) pattern to prevent duplicate form submissions on page refresh.📜 LicenseDistributed under the MIT License. See LICENSE for more information.
