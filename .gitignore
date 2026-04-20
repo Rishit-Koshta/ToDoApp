@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+target/
 
 # Log file
 *.log
@@ -22,3 +23,24 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+.DS_Store
+Thumbs.db
+
+# Build tool folders
+.gradle/
+build/
+.mvn/
+bin/
+
+# Environment / Sensitive files
+.env
+.properties
+# Note: Keep application.properties if it's a template, 
+# but ignore it if it contains real DB passwords.
+
+# IDE Specific (IntelliJ IDEA)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
