@@ -10,6 +10,11 @@ bin/
 *.zip
 *.tar.gz
 *.rar
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 # --- Configuration & Secrets ---
 # We ignore .env and local properties, but NOT the main application.properties
